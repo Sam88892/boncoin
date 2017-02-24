@@ -1,9 +1,9 @@
 var Nightmare = require('nightmare'), // I include the NightmareJs Library
   nightmare = Nightmare();
   var jquery= require('jquery') // I include JQuery
-  var link=process.argv[2] // I create a variable link to give the link in parametre
   //nightmare.goto('https://www.meilleursagents.com/prix-immobilier/'+estimation[1]+'/') where I would like to put my city estimation[1] of Leboncoinscript.js
-  nightmare.goto(process.argv[2]) // I go to the link with Nightmarejs that works
+  var city=process.argv[2] //I give the city with the postal code in argument sarcelles-95200 for example
+nightmare.goto('https://www.meilleursagents.com/prix-immobilier/'+process.argv[2]+'/') // I go to the link with Nightmarejs that works
     .wait(2000) //I wait for the program to have time to retrieve the data
     .evaluate(function(){ // I scrape the datas
     jQuery.noConflict()
