@@ -18,6 +18,8 @@ If you want to scrape Meilleursagents write "node MeilleursAgentsScript.js 'your
 
 4) The result of the scraping will be display on the terminal
 
+I add picture.pdf with pictures of the project
+
 Thank you for reading
 
 Samuel D
